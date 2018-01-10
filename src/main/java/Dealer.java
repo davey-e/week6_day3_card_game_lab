@@ -10,8 +10,8 @@ public class Dealer {
     }
 
 
-//    public Card dealCard(Player player) {
-//       Card cardToDeal = deck.removeCard();
-//
-//    }
+    public void dealCard(Player player) {
+       Card cardToDeal = deck.removeCard();
+       player.addCardToHand(cardToDeal);
+    }
 }
