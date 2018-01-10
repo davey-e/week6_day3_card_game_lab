@@ -2,6 +2,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 public class DealerTest {
 
@@ -19,6 +20,11 @@ public class DealerTest {
         player = new Player();
         dealer = new Dealer(deck);
 
+    }
+
+    @Test
+    public void dealerHasDeck(){
+        assertEquals(deck, dealer.getDeck());
     }
 
     @Test

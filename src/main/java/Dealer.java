@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Dealer {
 
@@ -13,5 +14,13 @@ public class Dealer {
     public void dealCard(Player player) {
        Card cardToDeal = deck.removeCard();
        player.addCardToHand(cardToDeal);
+    }
+
+    public Deck getDeck() {
+        return deck;
+    }
+
+    public void shuffleDeck() {
+        Collections.shuffle(deck.cards);
     }
 }
