@@ -21,20 +21,13 @@ public class DealerTest {
 
     }
 
-    @Test
-    public void canGetCard(){
-        dealer.getCard();
-        assertEquals(51, deck.getNumberOfCards());
-    }
-
-    @Test
-
-    public void dealCardTo_Player(){
-        dealer.getCard();
-        dealer.dealCard();
-        assertEquals(0, dealer.cardsInHandCount());
-
-    }
+//    @Test
+//
+//    public void canDealCardTo_Player(){
+//        dealer.dealCard(player);
+//
+//
+//    }
 
 
 

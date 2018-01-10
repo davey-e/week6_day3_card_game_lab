@@ -9,8 +9,11 @@ public class Player {
 
     }
 
-
     public int cardCount() {
         return this.hand.size();
+    }
+
+    public void addCardToHand(Card card) {
+        this.hand.add(card);
     }
 }
