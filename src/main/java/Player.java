@@ -16,4 +16,8 @@ public class Player {
     public void addCardToHand(Card card) {
         this.hand.add(card);
     }
+
+    public ArrayList<Card> showHand(){
+        return this.hand;
+    }
 }
